@@ -8,13 +8,16 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Serveur Antho/site1/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Serveur Antho/site1/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
+<main role="main" class="mb-4">
+        <div class="container">
+            <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Bienvenue !</h1>
+        <p class="col-md-8 fs-4">Vous êtes actuellement sur la plateforme e-commerce de Dians PC.</p>
+        <p><small>Vous y retrouverez tout type de matériel informatique, des formations, du merch, des produits de téléphonie, des figurines, etc...</small></p>
+        <a class="btn btn-dark btn-lg" href="{{ path('app_clients')}}">Voir les produits</a>
+    </div>
 </div>
+        </div>
+    </main>
 {% endblock %}
